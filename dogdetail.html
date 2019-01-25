@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pets Shop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: auto;
+  /* background: #ccc; */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: auto;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display:block;
+  clear: both;
+  /* height: auto; */
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(216, 202, 202);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+    iframe {
+  width: 100%;
+  height: auto;
+}
+}
+
+
+/* Responsive layout for small screens */
+@media (max-width: 500px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Welcome To Pets's World</h2>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dogdetail.html">Dogs's World</a></li>
+      <li><a href="catdetail.html">Cats's World</a></li>
+      <li><a href="fishdetail.html">Fish's World</a></li>
+      <li><a href="birddetail.html#">Birds's World</a></li>
+      
+    </ul>
+  </nav>
+  
+  <article>            
+
+    <h1>Dog's Video</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ceW_hiGvywg" 
+    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+    
+  </article>
+  
+
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
